@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="~/Content/navbar.css" />
+
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="...">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/About/Contacts">Контакты</a></li>
+                                <li><a href="~/About/ShemeWay">Схема проезда</a></li>
+                                <li><a href="~/About/Employeers">Наши сотрудники</a></li>
+                                <li><a href="~/About/MedCare">Оказываемая мед. помощь</a></li>
+                                <li><a href="~/About/Vacancy">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Режим работы <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Наши сотрудники</a></li>
+                                <li><a href="#">Оказываемая мед. помощь</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Запись на приём <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Наши сотрудники</a></li>
+                                <li><a href="#">Оказываемая мед. помощь</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Стационар <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Правовая информация <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Наши сотрудники</a></li>
+                                <li><a href="#">Оказываемая мед. помощь</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Обратная связь <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Наши сотрудники</a></li>
+                                <li><a href="#">Оказываемая мед. помощь</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Placeholder for custom page -->
+        <div>
+            @RenderBody()
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="../assets/js/docs.min.js"></script>
+
+        <!--Footer-->
+    </div>
+</body>
+</html>
