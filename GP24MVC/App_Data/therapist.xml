@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Doctors>
+	<Doctor>
+		<Name>Бархударян В. Ш.</Name>
+		<Cabinet>201</Cabinet>
+		<Work dayofweek="monday">8-12</Work>
+		<Work dayofweek="tuesday">13-17</Work>
+		<Work dayofweek="wednesday">8-12</Work>
+		<Work dayofweek="thursday">14-18</Work>
+		<Work dayofweek="friday">8-12</Work>
+	</Doctor>
+	<Doctor>
+    <Name>Бесчастнова Е. В.</Name>
+    <Cabinet>217</Cabinet>
+		<Work dayofweek="monday">8-12</Work>
+		<Work dayofweek="tuesday">15-19</Work>
+		<Work dayofweek="wednesday">10-14</Work>
+		<Work dayofweek="thursday">14-18</Work>
+		<Work dayofweek="friday">9-13</Work>
+	</Doctor>
+</Doctors>

@@ -1,7 +1,31 @@
 ﻿@{
-    ViewBag.Title = "DistrictService";
+    ViewBag.Title = "Участковая служба";
     Layout = "~/Views/_Layout.cshtml";
 }
+@using XMLHelper.External.Models;
+@model IEnumerable<XMLHelper.External.Models.Doctors>
 
-<h2>DistrictService</h2>
-
+        <h2 class="text-center">Участковая служба</h2>
+        <table class ="table table-bordered text-center">
+            <tr class="text-center">
+                <th class="text-center">Ф. И. О.</th>
+                <th class="text-center">Кабинет</th>
+                <th class="text-center">Пн</th>
+                <th class="text-center">Вт</th>
+                <th class="text-center">Ср</th>
+                <th class="text-center">Чт</th>
+                <th class="text-center">Пт</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItems => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItems => item.Cabinet)</td>
+                    <td>@Html.DisplayFor(modelItems => item.Work)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }
+        </table>

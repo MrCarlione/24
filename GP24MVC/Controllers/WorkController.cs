@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using XMLHelper;
 
 namespace GP24MVC.Controllers
 {
@@ -6,7 +7,9 @@ namespace GP24MVC.Controllers
     {
         public ActionResult DistrictService()
         {
-            return View();
+            XMLReader readerXML = new XMLReader();
+            var data = readerXML.RetrunListOfDoctors();
+            return View(data);
         }
 
         public ActionResult Specialists()

@@ -41,18 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="External.Models\Doctors.cs" />
+    <Compile Include="XMLReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GP24MVC.Tests\GP24MVC.Tests.csproj">
-      <Project>{6765758a-ccb2-4e43-aa99-bc9e21d53c23}</Project>
-      <Name>GP24MVC.Tests</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GP24MVC\GP24MVC.csproj">
-      <Project>{9ff1b0ec-b4c8-4f9b-8743-d6695c2084fb}</Project>
-      <Name>GP24MVC</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
