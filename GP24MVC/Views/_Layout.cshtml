@@ -38,46 +38,46 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="~/About/Contacts">Контакты</a></li>
-                                <li><a href="~/About/ShemeWay">Схема проезда</a></li>
-                                <li><a href="~/About/Employeers">Наши сотрудники</a></li>
-                                <li><a href="~/About/MedCare">Оказываемая мед. помощь</a></li>
-                                <li><a href="~/About/Vacancy">Вакансии</a></li>
+                                <li>@Html.ActionLink("Контакты", "Contacts", "About")</li>
+                                <li>@Html.ActionLink("Схема проезда", "ShemeWay", "About")</li>
+                                <li>@Html.ActionLink("Наши сотрудники", "Employeers", "About")</li>
+                                <li>@Html.ActionLink("Оказываемая мед. помощь", "MedCare", "About")</li>
+                                <li>@Html.ActionLink("Вакансии", "Vacancy", "About")</li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Режим работы <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Режим работы больницы</a></li>
-                                <li><a href="~/Work/DistrictService">Участковая служба</a></li>
-                                <li><a href="~/Work/Specialists">Узкие специалисты</a></li>
-                                <li><a href="~/Work/Dentists">Стоматология</a></li>
+                                <li>@Html.ActionLink("Режим работы больницы", "WorkMode", "Work")
+                                <li>@Html.ActionLink("Участковая служба", "DistrictService", "Work")
+                                <li>@Html.ActionLink("Узкие специалисты", "Specialists", "Work")
+                                <li>@Html.ActionLink("Стоматология", "Dentists", "Work")
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Запись на приём <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="~/Controllers/AppointmentController.cs">Портал пациента</a></li>
-                                <li><a href="~/Appointment/OrderRecords">Порядок записи</a></li>
-                                <li><a href="~/Appointment/PlotService">Участки обслуживания</a></li>
+                                <li>@Html.ActionLink("Портал пациента", "PortalPatient", "Appointment")
+                                <li>@Html.ActionLink("Порядок записи", "OrderRecords", "Appointment")
+                                <li>@Html.ActionLink("Участки обслуживания", "PlotService", "Appointment")
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Стационар <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="~/Hospital/HospitalsRules">Правила госпитализации</a></li>
-                                <li><a href="~/Hospital/Nursing">Отделение сестринского ухода</a></li>
+                                <li>@Html.ActionLink("Правила госпитализации", "HospitalsRules", "Hospital")
+                                <li>@Html.ActionLink("Отделение сестринского ухода", "Nursing", "Hospital")
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Правовая информация <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="~/Information/Duties">Права и обязанности граждан</a></li>
-                                <li><a href="~/Information/">Программа гос. гарантий</a></li>
-                                <li><a href="~/Information/">Стандарты мед. помощи</a></li>
-                                <li><a href="~/Information/OMS">Обязательное мед.страхование</a></li>
-                                <li><a href="~/Information/">Прикрепление к мед. организации</a></li>
-                                <li><a href="~/Information/">Льготное лекарственное обеспечение</a></li>
+                                <li>@Html.ActionLink("Права и обязанности граждан", "Duties", "Information")
+                                <li>@Html.ActionLink("Программа гос. гарантий", "Guarantee", "Information")
+                                <li>@Html.ActionLink("Стандарты мед. помощи", "MedicalStandarts", "Information")
+                                <li>@Html.ActionLink("Обязательное мед.страхование", "OMS", "Information")
+                                <li>@Html.ActionLink("Прикрепление к мед. организации", "Attaching", "Information")
+                                <li>@Html.ActionLink("Льготное лекарственное обеспечение", "Exemption", "Information")
                             </ul>
                         </li>
                         <li class="dropdown">

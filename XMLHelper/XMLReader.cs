@@ -28,7 +28,7 @@ namespace XMLHelper
                 Name = rows[0].ToString(), //Convert row to int   
                 Cabinet = Convert.ToInt32(rows[1].ToString()),
                 Work = rows[2].ToString(),
-                Work_Th = rows[3].ToString(),
+                //Work_Th = rows[3].ToString(),
             }).ToList();
             return doctors;
         }

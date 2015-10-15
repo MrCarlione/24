@@ -5,6 +5,11 @@ namespace GP24MVC.Controllers
 {
     public class WorkController : Controller
     {
+        public ActionResult WorkMode()
+        {
+            return View();
+        }
+
         public ActionResult DistrictService()
         {
             XMLReader readerXML = new XMLReader();

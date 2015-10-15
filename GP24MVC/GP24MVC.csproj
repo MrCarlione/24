@@ -140,6 +140,10 @@
     <Content Include="Views\Information\OMS.cshtml" />
     <Content Include="Views\Feedback\Reception.cshtml" />
     <Content Include="Views\Feedback\Administration.cshtml" />
+    <Content Include="Views\Work\WorkMode.cshtml" />
+    <Content Include="Views\Information\Guarantee.cshtml" />
+    <Content Include="Views\Information\Attaching.cshtml" />
+    <Content Include="Views\Information\Exemption.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
