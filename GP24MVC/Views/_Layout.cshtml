@@ -7,6 +7,7 @@
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/navbar.css" />
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +84,11 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Обратная связь <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Приём граждан с обращениями</a></li>
-                                <li><a href="#">Обратиться к администрации</a></li>
-                                <li><a href="#">задать вопрос</a></li>
-                                <li><a href="#">Оставить отзыв</a></li>
-                                <li><a href="#">Анкета по оценке работы</a></li>
+                                <li>@Html.ActionLink("Приём граждан с обращениями", "Reception", "Feedback")</li>
+                                <li>@Html.ActionLink("Обратиться к администрации", "Administration", "Feedback")</li>
+                                @*<li>@Html.ActionLink("Задать вопрос", "Reception", "Feedback")</li>
+                                <li>@Html.ActionLink("Оставить отзыв", "Reception", "Feedback")</li>
+                                <li>@Html.ActionLink("Анкета по оценке работы", "Reception", "Feedback")</li>*@
                             </ul>
                         </li>
                     </ul>
@@ -107,7 +108,7 @@
         <script src="../assets/js/docs.min.js"></script>
 
         <!-- Footer -->
-        <footer class="panel-footer" role="contentinfo">
+        <footer class="footer">
             <div class="container">
                 <p class="text-center text-muted">&#169 @DateTime.Now.Year - Magic Computers</p>
             </div>
